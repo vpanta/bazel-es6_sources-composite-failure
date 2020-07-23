@@ -1,0 +1,11 @@
+{
+  "name": "bazel-es6_sources-composite-failure",
+  "version": "1.0.0",
+  "description": "Example of rules_nodejs ts_library using 'composite' failing via filegroup with 'es6_sources'",
+  "dependencies": {
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@bazel/typescript": "^2.0.0"
+  }
+}

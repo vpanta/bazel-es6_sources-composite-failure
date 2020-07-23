@@ -1,0 +1,18 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_library")
+
+ts_library(
+    name = "index",
+    srcs = ["index.ts"],
+)
+
+filegroup(
+    name = "index.js",
+    srcs = [":index"],
+    output_group = "es6_sources",
+)
+
+filegroup(
+    name = "index.dev.js",
+    srcs = [":index"],
+    output_group = "es5_sources",
+)
